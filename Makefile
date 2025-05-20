@@ -230,6 +230,14 @@ run-deploy-next-no-traffic:
 		--tag next \
 		--no-traffic
 
+run-deploy-from-source-next-no-traffic:
+	gcloud run deploy demo \
+		--region $$(<.demoplate/region) \
+		--allow-unauthenticated \
+		--source . \
+		--tag next \
+		--no-traffic
+
 run-show:
 	gcloud run services describe demo
 
