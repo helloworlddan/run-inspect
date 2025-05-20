@@ -1,6 +1,6 @@
 module github.com/helloworlddan/run-inspect
 
-go 1.24.2
+go 1.23.2
 
 require (
 	github.com/blendle/zapdriver v1.3.1 // indirect
