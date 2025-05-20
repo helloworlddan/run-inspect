@@ -29,4 +29,5 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Region:           %s\n", run.Region())
 	fmt.Fprintf(w, "Service Account:  %s\n", run.ServiceAccountEmail())
 	fmt.Fprintf(w, "Serving Instance: %s\n", run.ID())
+	fmt.Fprintf(w, "Port:             %s\n", run.ServicePort())
 }
